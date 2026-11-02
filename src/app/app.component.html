@@ -1,0 +1,167 @@
+<main [class.is-entered]="entered">
+  <button *ngIf="musicVisible" class="music-toggle" type="button"
+    [attr.aria-label]="musicMuted ? 'Unmute music' : 'Mute music'" (click)="toggleMusic()">
+    {{ musicMuted ? '🔇' : '🔊' }}
+  </button>
+
+  <!-- Cover: curtains open on the wedding ceremony invitation -->
+  <section class="cover" [class.cover--opening]="opening" [class.cover--hidden]="entered" aria-label="Wedding ceremony invitation cover">
+    <div class="cover__curtain cover__curtain--l"></div>
+    <div class="cover__curtain cover__curtain--r"></div>
+    <div class="cover__valance"></div>
+    <div class="cover__garlands" aria-hidden="true">
+        <span class="garland garland--m" style="--n:5"></span>
+        <span class="garland garland--j" style="--n:6"></span>
+        <span class="garland garland--r" style="--n:7"></span>
+        <span class="garland garland--m" style="--n:4"></span>
+        <span class="garland garland--j" style="--n:3"></span>
+        <span class="garland garland--r" style="--n:3"></span>
+        <span class="garland garland--m" style="--n:3"></span>
+        <span class="garland garland--j" style="--n:3"></span>
+        <span class="garland garland--r" style="--n:4"></span>
+        <span class="garland garland--m" style="--n:7"></span>
+        <span class="garland garland--j" style="--n:6"></span>
+        <span class="garland garland--m" style="--n:5"></span>
+    </div>
+    <div class="cover__florals" aria-hidden="true"></div>
+    <div class="cover__stage">
+      <p class="cover__eyebrow">You are cordially invited to the</p>
+      <p class="cover__title">Wedding Ceremony</p>
+      <svg class="rangoli" viewBox="-100 -100 200 200" aria-hidden="true">
+        <g class="rg">
+          <circle r="96" pathLength="1"/>
+          <circle r="84" pathLength="1"/>
+          <rect x="-58" y="-58" width="116" height="116" pathLength="1"/>
+          <rect x="-58" y="-58" width="116" height="116" transform="rotate(45)" pathLength="1"/>
+          <ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(0)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(45)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(90)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(135)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(180)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(225)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(270)" pathLength="1"/><ellipse cx="0" cy="-62" rx="9" ry="20" transform="rotate(315)" pathLength="1"/>
+          <circle r="30" pathLength="1"/>
+          <circle r="14" pathLength="1"/>
+        </g>
+      </svg>
+      <p class="cover__of">of</p>
+      <p class="cover__names">{{ invitation.groom }} &amp; {{ invitation.bride }}</p>
+      <p class="cover__date">{{ invitation.date }}</p>
+      <button class="enter" type="button" (click)="enterInvitation()">Open the invitation</button>
+    </div>
+  </section>
+
+  <nav class="dots" aria-label="Invitation pages">
+    <a href="#p1" aria-label="Couple"></a><a href="#p2" aria-label="Our story"></a><a href="#p3" aria-label="Date"></a><a href="#p4" aria-label="Invitation card"></a><a href="#p5" aria-label="Venue"></a><a href="#p6" aria-label="Moments"></a>
+  </nav>
+
+  <div id="invitation" class="deck" aria-label="Wedding invitation, swipe sideways">
+
+    <!-- 1. The couple -->
+    <section class="page page--light page--names" id="p1">
+      <p class="intro eyebrow" style="--d:0s">Two families, one celebration</p>
+      <div class="intro oval" style="--d:.2s">
+        <img src="./assets/deepak-shreya-wedding.png" alt="Deepak and Shreya in traditional wedding attire" />
+      </div>
+      <h1 class="names">
+        <span class="intro n-left" style="--d:.5s">{{ invitation.groom }}</span>
+        <small class="intro" style="--d:.8s">weds</small>
+        <span class="intro n-right" style="--d:.7s">{{ invitation.bride }}</span>
+      </h1>
+      <p class="intro swipe" style="--d:1.2s">Swipe sideways &rarr;</p>
+    </section>
+
+    <!-- 2. Story -->
+    <section class="page page--haldi" id="p2">
+      <h2 class="reveal up">Our little love story</h2>
+      <div class="polaroid reveal tilt">
+        <img src="./assets/couple_1.jpeg" alt="Deepak and Shreya together" loading="lazy" />
+        <span>Where it all began</span>
+      </div>
+      <p class="story reveal up" style="--d:.2s">{{ invitation.story }}</p>
+    </section>
+
+    <!-- 3. Date: palm-leaf scroll -->
+    <section class="page page--light page--date" id="p3">
+      <h2 class="reveal up">Mark your calendar</h2>
+      <input type="checkbox" id="ola" class="mark" aria-label="Unroll the palm-leaf scroll" />
+      <label for="ola" class="ola reveal up">
+        <span class="ola__roll"><span class="ola__hint">Tap to unroll &#9829;</span></span>
+        <span class="ola__leaf">
+          <span class="ola__inner">
+            <small>Shubha Vivaha</small>
+            <strong>Sunday</strong>
+            <span class="ola__date">24 January 2027</span>
+            <em>Muhurtham &middot; {{ invitation.time }}</em>
+          </span>
+        </span>
+        <span class="ola__roll"></span>
+      </label>
+      <div class="countdown reveal up" aria-label="Time until the wedding">
+        <div><strong>{{ countdown.days }}</strong><span>Days</span></div>
+        <div><strong>{{ countdown.hours | number: '2.0-0' }}</strong><span>Hours</span></div>
+        <div><strong>{{ countdown.minutes | number: '2.0-0' }}</strong><span>Mins</span></div>
+        <div><strong>{{ countdown.seconds | number: '2.0-0' }}</strong><span>Secs</span></div>
+      </div>
+    </section>
+
+    <!-- 4. Greeting-card invitation (portrait, opens like a real card) -->
+    <section class="page page--green" id="p4">
+      <div class="gwrap reveal up">
+        <input type="checkbox" id="openCard" class="mark" aria-label="Open the invitation card" />
+        <div class="gcard">
+          <div class="gcard__stage">
+            <article class="gcard__inside" aria-labelledby="gc-heading">
+              <img class="gcard__icon" src="./assets/Ganesha.png" alt="" aria-hidden="true" />
+              <p class="gcard__heading" id="gc-heading">{{ withBlessings.heading }}</p>
+              <p class="gcard__message">{{ withBlessings.message }}</p>
+              <div class="gcard__family">
+                <h3>{{ withBlessings.groom.name }}</h3>
+                <p class="gcard__rel">{{ withBlessings.groom.relation }}</p>
+                <p>{{ withBlessings.groom.parents }}</p>
+              </div>
+              <p class="gcard__and">{{ withBlessings.connector }}</p>
+              <div class="gcard__family">
+                <h3>{{ withBlessings.bride.name }}</h3>
+                <p class="gcard__rel">{{ withBlessings.bride.relation }}</p>
+                <p>{{ withBlessings.bride.parents }}</p>
+              </div>
+              <div class="gcard__when">
+                <p class="gcard__rel">{{ withBlessings.dateLabel }}</p>
+                <p class="gcard__big">{{ withBlessings.date }}</p>
+                <p class="gcard__rel">{{ withBlessings.venueLabel }}</p>
+                <p class="gcard__big">{{ withBlessings.venue }}</p>
+              </div>
+            </article>
+            <label for="openCard" class="gcard__cover">
+              <span class="gcard__kicker">Wedding Invitation</span>
+              <span class="gcard__names">{{ invitation.groom }}<small>&amp;</small>{{ invitation.bride }}</span>
+              <span class="gcard__line">joyfully invite you to celebrate their wedding</span>
+              <span class="gcard__date">{{ invitation.date }}</span>
+              <span class="gcard__open">Tap to open &#9829;</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Venue -->
+    <section class="page page--light" id="p5">
+      <h2 class="reveal up">The celebration</h2>
+      <ol class="path reveal up">
+        <li><b>{{ invitation.time }}</b><span>Muhurtham</span></li>
+        <li><b>12:30 PM</b><span>Lunch</span></li>
+      </ol>
+      <p class="venue-name reveal up">{{ invitation.venue }}</p>
+      <div class="map-card reveal up" aria-label="Venue location">
+        <iframe class="map-frame" title="Map showing the venue"
+          src="https://maps.google.com/maps?q=Bhagavan+Shri+Bahubali+Pravachana+Mandira,+Karkala&z=15&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+      </div>
+      <button class="btn reveal up" type="button" (click)="openMaps()">Get directions</button>
+    </section>
+
+    <!-- 6. Moments -->
+    <section class="page page--green page--moments" id="p6">
+      <h2 class="reveal up">Moments we cherish</h2>
+      <div class="reel" aria-label="Photos of the couple"><div class="reel__track"><figure class="frame"><img src="./assets/couple_1.jpeg" alt="Deepak and Shreya, Together" loading="lazy" /></figure><figure class="frame"><img src="./assets/couple_2.jpeg" alt="Deepak and Shreya, Forever" loading="lazy" /></figure><figure class="frame"><img src="./assets/couple_3.jpeg" alt="Deepak and Shreya, Always" loading="lazy" /></figure><figure class="frame"><img src="./assets/couple_4.jpeg" alt="Deepak and Shreya, Blessed" loading="lazy" /></figure><figure class="frame"><img src="./assets/couple_5.jpeg" alt="Deepak and Shreya, Our memories" loading="lazy" /></figure><figure class="frame"><img src="./assets/couple_6.jpeg" alt="Deepak and Shreya, Happily ever after" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_1.jpeg" alt="" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_2.jpeg" alt="" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_3.jpeg" alt="" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_4.jpeg" alt="" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_5.jpeg" alt="" loading="lazy" /></figure><figure class="frame" aria-hidden="true"><img src="./assets/couple_6.jpeg" alt="" loading="lazy" /></figure></div></div>
+      <p class="closing reveal up">With hearts full of joy, we cordially invite you to bless us as we begin our new chapter.</p>
+      <p class="closing__from reveal up">Best wishes from family &amp; friends</p>
+    </section>
+
+  </div>
+</main>

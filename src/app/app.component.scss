@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
+
+$green: #0f5d4a;
+$deep: #0a3d31;
+$haldi: #f2b705;
+$haldi-l: #ffe27a;
+$ivory: #fffaf0;
+$kumkum: #c0392b;
+$ink: #10352c;
+$rose: #e0457b;
+$f-rose: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='%23e0457b'><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(0 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(45 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(90 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(135 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(180 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(225 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(270 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(315 50 50)'/></g><g fill='%23ffffff' opacity='.35'><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(22.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(67.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(112.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(157.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(202.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(247.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(292.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(337.5 50 50)'/></g><circle cx='50' cy='50' r='9' fill='%23f3d994'/><circle cx='50' cy='50' r='4' fill='%23d4a24c'/></svg>");
+$f-blush: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='%23f08fb0'><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(0 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(45 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(90 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(135 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(180 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(225 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(270 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(315 50 50)'/></g><g fill='%23ffffff' opacity='.35'><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(22.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(67.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(112.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(157.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(202.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(247.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(292.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(337.5 50 50)'/></g><circle cx='50' cy='50' r='9' fill='%23f3d994'/><circle cx='50' cy='50' r='4' fill='%23d4a24c'/></svg>");
+$f-marigold: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='%23f59e0b'><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(0 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(45 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(90 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(135 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(180 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(225 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(270 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(315 50 50)'/></g><g fill='%23ffffff' opacity='.35'><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(22.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(67.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(112.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(157.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(202.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(247.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(292.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(337.5 50 50)'/></g><circle cx='50' cy='50' r='9' fill='%23f3d994'/><circle cx='50' cy='50' r='4' fill='%23d4a24c'/></svg>");
+$f-jasmine: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='%23fffdf5' stroke='%23d9c48a' stroke-width='1.6'><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(0 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(45 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(90 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(135 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(180 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(225 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(270 50 50)'/><ellipse cx='50' cy='22' rx='11' ry='22' transform='rotate(315 50 50)'/></g><g fill='%23ffffff' opacity='.35'><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(22.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(67.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(112.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(157.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(202.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(247.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(292.5 50 50)'/><ellipse cx='50' cy='31' rx='6' ry='13' transform='rotate(337.5 50 50)'/></g><circle cx='50' cy='50' r='9' fill='%23f3d994'/><circle cx='50' cy='50' r='4' fill='%23d4a24c'/></svg>");
+$paper: #fff3d1;
+$script: 'Parisienne', cursive;
+$head: 'Playfair Display', Georgia, serif;
+$body: 'Lora', Georgia, serif;
+
+:host { display: block; height: 100svh; overflow: hidden; background: $ivory; color: $ink; font-family: $body; font-size: 1.05rem; line-height: 1.65; }
+* { box-sizing: border-box; }
+h1, h2, h3, p { margin: 0; }
+main { position: relative; height: 100%; }
+
+.music-toggle {
+  position: fixed; top: .8rem; right: .8rem; z-index: 30; width: 2.7rem; height: 2.7rem; border-radius: 50%;
+  border: 2px solid $haldi; background: $deep; cursor: pointer; font-size: 1.05rem;
+}
+
+/* ---------- Cover: curtains open on the invitation ---------- */
+.cover {
+  position: fixed; inset: 0; z-index: 20; overflow: hidden; touch-action: none; color: $haldi;
+  background: radial-gradient(ellipse at 50% 40%, #146b55, $deep 75%);
+  transition: opacity .8s ease .9s, visibility 0s linear 1.7s;
+  &--hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  &--opening { background: transparent; pointer-events: none; }
+
+  &__curtain {
+    position: absolute; top: 0; bottom: 0; width: 50.4%; z-index: 2;
+    background:
+      repeating-linear-gradient(90deg, rgba(0, 0, 0, .34) 0, rgba(255, 255, 255, .07) 16px, rgba(0, 0, 0, .34) 34px),
+      linear-gradient(180deg, #14805f, $green 55%, #083226);
+    transition: transform 1.5s cubic-bezier(.65, 0, .25, 1);
+    &::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: .9rem; background: repeating-linear-gradient(90deg, $haldi 0 6px, #a77c00 6px 8px); }
+    &--l { left: 0; transform-origin: left center; border-right: 3px solid $haldi; }
+    &--r { right: 0; transform-origin: right center; border-left: 3px solid $haldi; }
+  }
+  &__valance {
+    position: absolute; top: 0; left: 0; right: 0; height: 2.6rem; z-index: 5;
+    background: linear-gradient(180deg, #14805f, $green); border-bottom: 3px solid $haldi;
+    &::after {
+      content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 1.1rem;
+      background: radial-gradient(circle at 50% 0, $green 0 .85rem, $haldi .86rem .98rem, transparent 1rem) 0 0 / 2rem 1.1rem repeat-x;
+    }
+  }
+  &__garlands { position: absolute; top: 2.4rem; left: 0; right: 0; z-index: 6; pointer-events: none; display: flex; justify-content: space-around; padding: 0 .3rem; }
+  &__florals {
+    position: absolute; inset: 0; z-index: 6; pointer-events: none; transition: opacity .5s ease;
+    background:
+      $f-rose no-repeat left -30px top 54px / 92px,
+      $f-marigold no-repeat right -30px top 54px / 92px,
+      $f-blush no-repeat left -52px bottom -46px / 160px,
+      $f-rose no-repeat right -52px bottom -46px / 160px,
+      $f-marigold no-repeat left 22px bottom -30px / 80px,
+      $f-blush no-repeat right 22px bottom -30px / 80px;
+  }
+  &__stage {
+    position: absolute; inset: 0; z-index: 7; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .35rem; padding: 8.4rem 1rem 1rem; text-align: center; transition: opacity .5s ease, transform .6s ease;
+  }
+  &__eyebrow { font-family: $head; font-style: italic; letter-spacing: .08em; color: $ivory; font-size: 1rem; }
+  &__title { font: 700 clamp(1.35rem, 6vw, 1.8rem) $head; letter-spacing: .2em; text-transform: uppercase; color: $haldi-l; text-shadow: 0 2px 8px rgba(0, 0, 0, .35); }
+  &__of { font-family: $head; font-style: italic; color: $ivory; }
+  &__names { font-family: $script; font-size: clamp(2.7rem, 11vw, 3.6rem); line-height: 1.25; color: $haldi-l; }
+  &__date { font: italic 500 1rem $head; letter-spacing: .1em; color: $ivory; margin-bottom: .6rem; }
+  &--opening .cover__curtain { transform: scaleX(.13); }
+  &--opening .cover__stage { opacity: 0; transform: scale(1.08); }
+  &--opening .cover__florals { opacity: 0; }
+}
+.rangoli { width: min(34vw, 120px); height: auto; color: $haldi; margin: .2rem 0; }
+.rg > * { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.6s ease forwards; }
+@for $i from 1 through 14 { .rg > :nth-child(#{$i}) { animation-delay: #{$i * .14s}; } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.garland {
+  width: 1.4rem; height: calc(var(--n) * 1.4rem);
+  &--m { background: radial-gradient(circle, #ffe08a 0 22%, #ffb300 24% 58%, #e65100 60% 68%, transparent 70%) 0 0 / 1.4rem 1.4rem repeat-y; }
+  &--j { background: radial-gradient(circle, #fff 0 40%, #f3e6c4 42% 60%, transparent 63%) 0 0 / 1.4rem 1.4rem repeat-y; }
+  &--r { background: radial-gradient(circle, #ffd1dc 0 24%, #f06292 28% 62%, #c2185b 64% 70%, transparent 72%) 0 0 / 1.4rem 1.4rem repeat-y; }
+}
+.enter {
+  margin-top: .2rem; padding: .7rem 1.8rem; border: 2px solid $haldi; border-radius: 99px; background: rgba($deep, .55); cursor: pointer;
+  color: $haldi-l; font: 600 .9rem $head; letter-spacing: .16em; text-transform: uppercase; animation: pulse 2.2s ease-in-out infinite;
+  &:focus-visible { outline: 2px solid $ivory; outline-offset: 4px; }
+}
+@keyframes pulse { 50% { background: rgba($haldi, .3); } }
+
+/* ---------- Sideways pages ---------- */
+.deck {
+  display: flex; height: 100svh; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+.page {
+  position: relative; flex: 0 0 100%; min-width: 100%; height: 100svh; overflow-y: auto; scroll-snap-align: start; scroll-snap-stop: always;
+  display: flex; flex-direction: column; align-items: center; gap: 1.2rem; padding: 2.6rem 1.4rem 4.4rem; text-align: center;
+  > :first-child { margin-top: auto; }
+  > :last-child { margin-bottom: auto; }
+  &--light { background: $f-blush no-repeat right -36px top 30px / 100px, $f-marigold no-repeat left -42px bottom 58px / 110px, $f-rose no-repeat right -26px bottom 70px / 60px, $ivory; }
+  &--haldi { background: $f-rose no-repeat left -34px top 34px / 100px, $f-jasmine no-repeat right -40px top 60px / 90px, $f-rose no-repeat right -44px bottom 56px / 120px, $f-jasmine no-repeat left -30px bottom 70px / 70px, linear-gradient(180deg, #ffe9a0, #ffd54f); }
+  &--green { background: $f-marigold no-repeat left -36px top 30px / 100px, $f-blush no-repeat right -36px top 30px / 100px, $f-jasmine no-repeat left -40px bottom 58px / 100px, $f-rose no-repeat right -40px bottom 58px / 100px, radial-gradient(circle at 50% 20%, #146b55, $deep 75%); color: $ivory; }
+  &--light::before, &--haldi::before {
+    content: ''; position: absolute; top: .6rem; left: 0; right: 0; height: 16px;
+    background: radial-gradient(circle, #fff 0 35%, #e8dcb8 42%, transparent 62%) 0 0 / 22px 16px repeat-x;
+  }
+}
+.dots {
+  position: fixed; bottom: .9rem; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: .7rem;
+  padding: .45rem .8rem; border-radius: 99px; background: rgba($deep, .85);
+  a { width: .6rem; height: .6rem; border-radius: 50%; border: 1.5px solid $haldi; &:hover, &:focus-visible { background: $haldi; outline: none; } }
+}
+
+h2 {
+  font-family: $head; font-style: italic; font-weight: 500; font-size: clamp(1.8rem, 7vw, 2.3rem); line-height: 1.2; color: $green;
+  &::after { content: '✿ ❀ ✿'; display: block; margin-top: .3rem; font-size: 1rem; letter-spacing: .5em; color: $rose; }
+}
+.page--green h2 { color: $haldi-l; }
+
+/* animation helpers: .reveal is switched on by the page code as each page scrolls into view */
+.reveal { opacity: 0; transition: opacity .9s ease, transform .9s ease; transition-delay: var(--d, 0s); }
+.reveal.up { transform: translateY(34px); }
+.reveal.tilt { transform: translateX(-60px) rotate(-10deg); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal.tilt.is-visible { transform: rotate(-3deg); }
+.intro { opacity: 0; }
+.is-entered .intro { animation: rise 1s ease both; animation-delay: calc(1.4s + var(--d, 0s)); }
+.is-entered .n-left { animation-name: from-left; }
+.is-entered .n-right { animation-name: from-right; }
+@keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes from-left { from { opacity: 0; transform: translateX(-70px); } to { opacity: 1; transform: none; } }
+@keyframes from-right { from { opacity: 0; transform: translateX(70px); } to { opacity: 1; transform: none; } }
+
+/* ---------- 1. Couple ---------- */
+.page--names { background: $f-rose no-repeat left -38px top 30px / 110px, $f-marigold no-repeat right -38px top 30px / 110px, $f-blush no-repeat left -44px bottom 56px / 100px, $f-rose no-repeat right -44px bottom 56px / 100px, $f-jasmine no-repeat left 8px top 130px / 40px, $f-jasmine no-repeat right 8px top 130px / 40px, $ivory; }
+.eyebrow { font-family: $head; font-style: italic; letter-spacing: .1em; color: $green; }
+.oval {
+  width: min(60vw, 240px); aspect-ratio: 3 / 4; border-radius: 50% / 46%; overflow: hidden;
+  border: 4px solid $haldi; outline: 2px solid $green; outline-offset: 6px; background: linear-gradient(180deg, #146b55, $deep);
+  img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; display: block; }
+}
+.names {
+  display: flex; flex-direction: column; align-items: center; font-family: $script; font-weight: 400; color: $green;
+  font-size: clamp(3rem, 14vw, 4.2rem); line-height: 1.2;
+  small { font: italic 500 1.1rem $head; letter-spacing: .3em; color: $rose; }
+}
+.swipe { color: $green; font-style: italic; opacity: .8; }
+
+/* ---------- 2. Story ---------- */
+.polaroid {
+  padding: .6rem .6rem .4rem; background: #fff; box-shadow: 0 8px 20px rgba($deep, .25); width: min(56vw, 220px);
+  img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+  span { display: block; padding-top: .3rem; font-family: $script; font-size: 1.5rem; line-height: 1.3; color: $green; }
+}
+.story { max-width: 30rem; font-style: italic; font-size: 1.15rem; color: $ink; }
+
+.mark { position: absolute; opacity: 0; pointer-events: none; }
+.countdown {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; width: min(86vw, 320px);
+  div { padding: .5rem .1rem; border: 1.5px solid $green; border-radius: 8px; }
+  strong { display: block; font: 700 1.5rem $head; color: $green; }
+  span { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+}
+
+/* ---------- 3. Date: palm-leaf scroll ---------- */
+.mark:focus-visible + * { outline: 3px solid $haldi; outline-offset: 4px; }
+.page--date .countdown { margin-top: .4rem; }
+
+.ola { display: block; width: min(86vw, 320px); cursor: pointer; filter: drop-shadow(0 8px 12px rgba($deep, .3)); }
+.ola__roll {
+  display: grid; place-items: center; height: 2.8rem; border-radius: 1.4rem; color: $haldi-l; font-size: .95rem; letter-spacing: .08em;
+  background: linear-gradient(180deg, #9a6532, #5a3414 50%, #9a6532);
+}
+.ola__hint { transition: opacity .4s ease; }
+.mark:checked + .ola .ola__hint { opacity: 0; }
+.ola__leaf {
+  position: relative; display: block; width: 92%; margin: 0 auto; max-height: 0; overflow: hidden; transition: max-height 1.9s ease;
+  background: repeating-linear-gradient(90deg, rgba(90, 70, 20, .1) 0 1px, transparent 1px 7px), linear-gradient(180deg, #e2cf8a, #cdb766 50%, #e2cf8a);
+  &::before, &::after { content: ''; position: absolute; top: 1.3rem; width: .7rem; height: .7rem; border-radius: 50%; background: #5a3414; box-shadow: inset 0 0 0 2px #9a7a2c; }
+  &::before { left: .9rem; }
+  &::after { right: .9rem; }
+}
+.mark:checked + .ola .ola__leaf { max-height: 19rem; }
+.ola__inner {
+  display: grid; gap: .3rem; padding: 2.6rem 1.8rem 2rem; color: #4a3410; text-shadow: 0 1px 0 rgba(255, 255, 255, .45);
+  small { font: 600 .8rem $head; letter-spacing: .3em; text-transform: uppercase; color: $kumkum; }
+  strong { font: 400 2.8rem/1.2 $script; }
+  .ola__date { font: 700 1.6rem $head; }
+  em { font-style: normal; font-weight: 600; }
+}
+
+/* ---------- 4. Greeting-card invitation: portrait, sized from the screen ---------- */
+/* 1em inside the card = 1% of the card width, so everything scales together and always fits. */
+.gwrap { display: grid; place-items: center; }
+.gcard { position: relative; width: min(92vw, calc((100svh - 8.5rem) * .6667), 30rem); aspect-ratio: 2 / 3; container-type: inline-size; }
+.gcard__stage { position: absolute; inset: 0; font-size: 3.2vw; font-size: 1cqw; perspective: 1500px; }
+
+.gcard__inside {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  padding: 7em 7em 6.5em; text-align: center; color: $ink; line-height: 1.4;
+  background:
+    $f-rose no-repeat left -3.5em top -3.5em / 17em,
+    $f-marigold no-repeat right -3.5em top -3.5em / 17em,
+    $f-blush no-repeat left -3.5em bottom -3.5em / 17em,
+    $f-rose no-repeat right -3.5em bottom -3.5em / 17em,
+    linear-gradient(180deg, #fffaf0, $paper);
+  border: .8em double $green; outline: .35em solid $haldi; outline-offset: -2.4em; border-radius: 1.2em; box-shadow: 0 2em 5em rgba(0, 0, 0, .45);
+}
+.gcard__icon { height: 10em; width: auto; }
+.gcard__heading { font: 700 2.6em/1.5 $head; letter-spacing: .1em; color: $kumkum; }
+.gcard__message { font-style: italic; font-size: 3.3em; line-height: 1.35; }
+.gcard__family h3 { font: 400 9em/1.1 $script; color: $green; }
+.gcard__family p { font-size: 3.5em; line-height: 1.3; }
+.gcard__family .gcard__rel { font-size: 2.2em; }
+.gcard__rel { font: 600 2.2em $head; letter-spacing: .2em; color: $rose; }
+.gcard__and { font: 6em/1 $script; color: $haldi; }
+.gcard__when { width: 100%; padding-top: 2.2em; border-top: .15em dashed $green; }
+.gcard__big { font: italic 600 3.8em/1.3 $head; color: $green; margin-bottom: .6em; }
+.gcard__when .gcard__big:last-child { margin-bottom: 0; }
+
+.gcard__cover {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3em; padding: 8em;
+  text-align: center; cursor: pointer; color: $haldi-l; transform-origin: left center; backface-visibility: hidden;
+  background:
+    $f-rose no-repeat left -3.5em top -3.5em / 19em,
+    $f-marigold no-repeat right -3.5em top -3.5em / 19em,
+    $f-blush no-repeat left -3.5em bottom -3.5em / 19em,
+    $f-rose no-repeat right -3.5em bottom -3.5em / 19em,
+    radial-gradient(circle at 50% 30%, #1c7c62, $green 60%, $deep);
+  border: .8em double $haldi; border-radius: 1.2em; box-shadow: 0 2em 5em rgba(0, 0, 0, .5);
+  transition: transform 1.3s cubic-bezier(.5, 0, .2, 1), opacity .5s ease .8s;
+}
+.gcard__kicker { font: 600 2.8em $head; letter-spacing: .3em; text-transform: uppercase; color: $ivory; }
+.gcard__names { display: flex; flex-direction: column; align-items: center; font: 400 14em/1.15 $script; color: $haldi-l; text-shadow: 0 .1em .4em rgba(0, 0, 0, .4); small { font: italic 500 .3em $head; letter-spacing: .2em; color: $ivory; } }
+.gcard__line { max-width: 70%; font: italic 3.6em/1.4 $head; color: $ivory; }
+.gcard__date { font: 600 3.4em $head; letter-spacing: .12em; }
+.gcard__open { font: italic 3.2em $head; color: $haldi; animation: pulse-text 2s ease-in-out infinite; }
+@keyframes pulse-text { 50% { opacity: .45; } }
+.mark:checked + .gcard .gcard__cover { transform: rotateY(-112deg); opacity: 0; pointer-events: none; }
+
+/* ---------- 5. Venue ---------- */
+.path {
+  list-style: none; margin: 0; padding: 0 0 0 1.6rem; text-align: left; border-left: 3px dotted $haldi; display: grid; gap: 1rem;
+  li { position: relative; display: grid; &::before { content: ''; position: absolute; left: -2.15rem; top: .45rem; width: .9rem; height: .9rem; background: $kumkum; border-radius: 50%; border: 2px solid $ivory; } }
+  b { font: 700 1.2rem $head; color: $green; }
+}
+.venue-name { max-width: 24rem; font: italic 500 1.2rem $head; color: $green; }
+.map-card { width: min(100%, 26rem); height: 12rem; border-radius: 14px 14px 80px 14px; overflow: hidden; border: 3px solid $haldi; box-shadow: 0 8px 20px rgba($deep, .25); }
+.map-frame { width: 100%; height: 100%; border: 0; pointer-events: none; filter: saturate(.9) sepia(.15); }
+.btn {
+  padding: .7rem 2rem; border: 0; border-radius: 99px; cursor: pointer; background: $green; color: $haldi-l;
+  font: 600 .9rem $head; letter-spacing: .16em; text-transform: uppercase;
+  &:hover, &:focus-visible { background: $deep; outline: 2px solid $haldi; outline-offset: 3px; }
+}
+
+/* ---------- 6. Moments reel ---------- */
+.reel { width: calc(100% + 2.8rem); margin: 0 -1.4rem; overflow: hidden; }
+.reel__track { display: flex; gap: .8rem; width: max-content; animation: reel 38s linear infinite; }
+.frame {
+  margin: 0; flex: none; width: 8.5rem; padding: .5rem 0; background: #06241c; border-inline: 12px dotted rgba($ivory, .92);
+  img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+}
+@keyframes reel { to { transform: translateX(-50%); } }
+.closing { max-width: 26rem; font-style: italic; }
+.closing__from { font: 600 .85rem $head; letter-spacing: .22em; text-transform: uppercase; color: $haldi-l; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rg > *, .enter, .reel__track { animation: none; stroke-dashoffset: 0; }
+  .is-entered .intro { animation: none; opacity: 1; }
+  .reveal { opacity: 1; transform: none !important; transition: none; }
+  .deck { scroll-behavior: auto; }
+}
